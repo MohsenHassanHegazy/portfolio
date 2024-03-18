@@ -12,15 +12,40 @@ body{
     height: 100px;
  }
 
- a:visited{
-  color:bisque;
-  text-decoration: none;
-  }
- a:visited:target{
-color:aqua;
-text-decoration: none;
-  }
+a{
+   text-decoration: none;
+ }
+ nav{ 
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+ }
+nav>a{ 
+  color: azure;
+  margin: 7px;
+  transition: 0.5s;
+  opacity: 0.5;
+}
+nav> a::before{
+  content: ""; 
+  font-size: 1.5px;
+  border-left: solid 40px;
+  transition: 0.5s;
+  margin-right: 10px;
+}
+nav>a:hover{
+  opacity: 1;
+ }
+nav> a:hover::before{
+  border-left: solid 80px; 
+}
 
+.active{
+  opacity: 1;
+ }
+.active::before{
+  border-left: solid 80px; 
+  }
 p{
    color: rgba(198, 209, 243, 0.74)
  }
@@ -40,9 +65,11 @@ p{
     width: 45vw;
     margin: 5vh 0 0 5vw;
  }
+
+
  .right>
   div{
-   margin:0 0 10vh 0
+   margin:5vh 0 10vh 0
   }
  .right{
     position: absolute;
