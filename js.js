@@ -4,8 +4,10 @@ handleMouseMove = (event) => {
     const ref = document.getElementById("cbox");
     const scrollLeft = (window.pageXOffset !== undefined) ? window.pageXOffset : (document.documentElement || document.body.parentNode || document.body).scrollLeft;
     const scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-    ref.style.left =  x - scrollLeft -450 +'px';
-    ref.style.top = y - scrollTop -450  + 'px';
+    const n =ref.clientWidth /2;
+    console.log(n);
+    ref.style.left =  x - scrollLeft -n +'px';
+    ref.style.top = y - scrollTop -n  + 'px';
 };
 document.addEventListener("mousemove", handleMouseMove, false);
 
@@ -26,7 +28,7 @@ activelink =(event)=>{
         courses.setAttribute('class','active');
         project.setAttribute('class','none');
      }
-     else if(scrollTop>=courses.offsetTop+250){
+     else if(scrollTop>=courses.offsetTop+300){
         about.setAttribute('class','noen');
         courses.setAttribute('class','none');
         project.setAttribute('class','active');

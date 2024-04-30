@@ -12,10 +12,19 @@ body{
     height: 100px;
  }
 
+ .left h1{
+  font-size: 50;
+  margin-bottom: -20px;
+  }
+
 a{
    text-decoration: none;
  }
+ a:visited{
+  color: unset;
+  }
  nav{ 
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -49,12 +58,10 @@ nav> a:hover::before{
 p{
    color: rgba(198, 209, 243, 0.74)
  }
+ 
  .flash{
     pointer-events: none;
-    background: radial-gradient(rgba(132, 113, 243, 0.08),
-                                rgba(71, 91, 241, 0.04),
-                                rgba(86, 86, 250, 0.002),
-                                rgba(0,0,0,0.000));
+    background: radial-gradient(600px, rgba(29, 78, 216, 0.15), transparent 80%);
     width: 900px;
     height: 900px;
     border-radius: 450px;
@@ -115,6 +122,22 @@ p{
       background-color:rgb(27, 39, 66) ;
      }
     .contaner img{
-      width: 40px;
+      width: 100px;
       margin-top: 20px;
+      margin-right:20px ;
      }
+     ul{
+      display: flex;
+      flex-direction: row;
+      margin-left: -100px;
+      }
+      li{
+        font-size: small;
+        margin-right: 15px;
+        padding: 4px;
+        list-style: none;
+        background-color: rgba(127, 255, 212, 0.089);
+        color: aquamarine;
+        border-radius: 30%;
+        
+       }
