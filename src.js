@@ -24,14 +24,14 @@ activelink =(event)=>{
         project.setAttribute('class','none');
      }
      else if(scrollTop>about.offsetTop &&scrollTop<courses.offsetTop+250){
-        about.setAttribute('class','none');
-        courses.setAttribute('class','active');
-        project.setAttribute('class','none');
-     }
-     else if(scrollTop>=courses.offsetTop+300){
-        about.setAttribute('class','noen');
-        courses.setAttribute('class','none');
-        project.setAttribute('class','active');
+         about.setAttribute('class','noen');
+         courses.setAttribute('class','none');
+         project.setAttribute('class','active');
+        }
+        else if(scrollTop>=courses.offsetTop+300){
+         about.setAttribute('class','none');
+         courses.setAttribute('class','active');
+         project.setAttribute('class','none');
       }
 
  }

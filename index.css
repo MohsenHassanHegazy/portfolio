@@ -88,7 +88,24 @@ p{
   footer{
    margin-top: 50vh;
    }
-  footer img{
+  footer a{
+    margin:0 5px;
+    border-radius: 10%;
+    transition: .8s;
+    padding: 2px;
+   }
+
+   #gmail:hover{ background-color: rgb(233, 225, 225);color: rgb(253, 55, 28); }
+   #git:hover{ background-color:rgb(64, 90, 235);color: aliceblue; }
+   #linkedin:hover{
+    background: linear-gradient(rgba(49, 94, 240, 0.521),rgba(49, 94, 240, 0.74),rgb(49, 94, 240) ) ;
+    color:azure}
+   #whats:hover{
+    background: linear-gradient(rgba(49, 240, 90, 0.336),rgba(49, 240, 90, 0.5),rgba(49, 240, 90, 1) ) ;
+    color:azure}
+                
+  
+  /* footer img{
    width:25px;
    margin:10px;
    filter: grayscale(100);
@@ -96,13 +113,16 @@ p{
    }
    footer img:hover{
       filter: grayscale(0);
-      }
+      } */
 
     .contaner{
       transition: 0.4s;
+      margin-top: 120px;
     }
     .contaner > div{
       margin: 10px;
+      margin-top: 20px;
+      margin-bottom: 20px;
       border-radius: 10px;
       padding:0 5px 5px 20px;
       transition: 0.4s;
@@ -141,3 +161,9 @@ p{
         border-radius: 30%;
         
        }
+      #about{
+        padding: 15px 0px;
+        line-height: 40px;
+        font-size: 20;
+        font-weight: bold;
+       } 
