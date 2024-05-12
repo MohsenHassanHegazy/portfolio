@@ -1,111 +1,134 @@
-html{
+html {
   overflow-y: scroll;
   scroll-behavior: smooth;
- }
+}
 
-body{
-    background-color: rgb(15, 23, 42);
-    color:rgb(221, 238, 238);
-    display: block;
-    font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-feature-settings: "ss03","cv02","cv11";
-    height: 100px;
- }
+body {
+  background-color: rgb(15, 23, 42);
+  color: rgb(221, 238, 238);
+  display: block;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-feature-settings: "ss03", "cv02", "cv11";
+  height: 100px;
+}
 
- .left h1{
+/* flash light */
+
+.flash {
+  pointer-events: none;
+  background: radial-gradient(600px, rgba(29, 78, 216, 0.15), transparent 80%);
+  width: 900px;
+  height: 900px;
+  border-radius: 450px;
+  position: fixed;
+}
+
+/* ***************** */
+
+/* left panel */
+
+.left {
+  position: fixed;
+  width: 45vw;
+  margin: 5vh 0 0 5vw;
+}
+
+.left h1 {
   font-size: 50;
   margin-bottom: -20px;
-  }
+}
 
-a{
-   text-decoration: none;
- }
- a:visited{
+a {
+  text-decoration: none;
   color: unset;
-  }
- nav{ 
+}
+a:visited {
+  color: unset;
+}
+nav {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   width: fit-content;
- }
-nav>a{ 
+}
+nav > a {
   color: azure;
   margin: 7px;
   transition: 0.5s;
   opacity: 0.5;
 }
-nav> a::before{
-  content: ""; 
+nav > a::before {
+  content: "";
   font-size: 1.5px;
   border-left: solid 40px;
   transition: 0.5s;
   margin-right: 10px;
 }
-nav>a:hover{
+nav > a:hover {
   opacity: 1;
- }
-nav> a:hover::before{
-  border-left: solid 80px; 
+}
+nav > a:hover::before {
+  border-left: solid 80px;
 }
 
-.active{
+.active {
   opacity: 1;
- }
-.active::before{
-  border-left: solid 80px; 
-  }
-p{
-   color: rgba(198, 209, 243, 0.74)
- }
- 
- .flash{
-    pointer-events: none;
-    background: radial-gradient(600px, rgba(29, 78, 216, 0.15), transparent 80%);
-    width: 900px;
-    height: 900px;
-    border-radius: 450px;
-    position: fixed;
-  }
- .left{ 
-    position: fixed;
-    width: 45vw;
-    margin: 5vh 0 0 5vw;
- }
+}
+.active::before {
+  border-left: solid 80px;
+}
+p {
+  color: rgba(198, 209, 243, 0.74);
+}
 
+.right > div {
+  margin: 5vh 0 10vh 0;
+}
+.right {
+  position: absolute;
+  width: 45vw;
+  left: 50vw;
+  margin: 5vh 10vw 0 0;
+  scroll-behavior: smooth;
+}
+footer {
+  margin-top: 50vh;
+}
+footer a {
+  margin: 0 5px;
+  border-radius: 10%;
+  transition: 0.8s;
+  padding: 2px;
+}
 
- .right>
-  div{
-   margin:5vh 0 10vh 0
-  }
- .right{
-    position: absolute;
-    width: 45vw;
-    left: 50vw;
-    margin: 5vh 10vw 0 0;
-    scroll-behavior: smooth;
-  }
-  footer{
-   margin-top: 50vh;
-   }
-  footer a{
-    margin:0 5px;
-    border-radius: 10%;
-    transition: .8s;
-    padding: 2px;
-   }
+#gmail:hover {
+  background-color: rgb(233, 225, 225);
+  color: rgb(253, 55, 28);
+}
+#git:hover {
+  background-color: rgb(64, 90, 235);
+  color: aliceblue;
+}
+#linkedin:hover {
+  background: linear-gradient(
+    rgba(49, 94, 240, 0.521),
+    rgba(49, 94, 240, 0.74),
+    rgb(49, 94, 240)
+  );
+  color: azure;
+}
+#whats:hover {
+  background: linear-gradient(
+    rgba(49, 240, 90, 0.336),
+    rgba(49, 240, 90, 0.5),
+    rgba(49, 240, 90, 1)
+  );
+  color: azure;
+}
 
-   #gmail:hover{ background-color: rgb(233, 225, 225);color: rgb(253, 55, 28); }
-   #git:hover{ background-color:rgb(64, 90, 235);color: aliceblue; }
-   #linkedin:hover{
-    background: linear-gradient(rgba(49, 94, 240, 0.521),rgba(49, 94, 240, 0.74),rgb(49, 94, 240) ) ;
-    color:azure}
-   #whats:hover{
-    background: linear-gradient(rgba(49, 240, 90, 0.336),rgba(49, 240, 90, 0.5),rgba(49, 240, 90, 1) ) ;
-    color:azure}
-                
-  
-  /* footer img{
+/* footer img{
    width:25px;
    margin:10px;
    filter: grayscale(100);
@@ -115,55 +138,54 @@ p{
       filter: grayscale(0);
       } */
 
-    .contaner{
-      transition: 0.4s;
-      margin-top: 120px;
-    }
-    .contaner > div{
-      margin: 10px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      padding:0 5px 5px 20px;
-      transition: 0.4s;
-     }
-     .item{ 
-      display:grid;
-      grid-template-columns:1fr 6fr;
-      grid-template-rows: auto auto;
-      text-align: left;
-     }
+.contaner {
+  transition: 0.4s;
+  margin-top: 120px;
+}
+.contaner > div {
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 0 5px 5px 20px;
+  transition: 0.4s;
+}
+.item {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: auto auto;
+  text-align: left;
+}
 
-     .contaner:hover .item{ 
-      opacity: 0.4;
-     }
-     .contaner .item:hover{ 
-      opacity: 1;
-      background-color:rgb(27, 39, 66) ;
-     }
-    .contaner img{
-      width: 100px;
-      margin-top: 20px;
-      margin-right:20px ;
-     }
-     ul{
-      display: flex;
-      flex-direction: row;
-      margin-left: -100px;
-      }
-      li{
-        font-size: small;
-        margin-right: 15px;
-        padding: 4px;
-        list-style: none;
-        background-color: rgba(127, 255, 212, 0.089);
-        color: aquamarine;
-        border-radius: 30%;
-        
-       }
-      #about{
-        padding: 15px 0px;
-        line-height: 40px;
-        font-size: 20;
-        font-weight: bold;
-       } 
+.contaner:hover .item {
+  opacity: 0.4;
+}
+.contaner .item:hover {
+  opacity: 1;
+  background-color: rgb(27, 39, 66);
+}
+.contaner img {
+  width: 100px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: -100px;
+}
+li {
+  font-size: small;
+  margin-right: 15px;
+  padding: 4px;
+  list-style: none;
+  background-color: rgba(127, 255, 212, 0.089);
+  color: aquamarine;
+  border-radius: 30%;
+}
+#about {
+  padding: 15px 0px;
+  line-height: 40px;
+  font-size: 20;
+  font-weight: bold;
+}
