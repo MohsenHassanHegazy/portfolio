@@ -2,6 +2,10 @@ html {
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
+::selection {
+  background-color: rgb(109, 250, 203);
+  color: rgb(54, 53, 53);
+}
 
 p {
   color: rgb(119, 141, 192);
@@ -47,10 +51,10 @@ body {
 
 a {
   text-decoration: none;
-  color: unset;
+  color: rgb(221, 238, 238);
 }
 a:visited {
-  color: unset;
+  color: rgb(221, 238, 238);
 }
 
 /* side nav bar */
@@ -119,7 +123,7 @@ footer img:hover {
 }
 
 #about {
-  /* padding: 15px 0px; */
+  padding-right: 75px;
   line-height: 25px;
   font-size: 15;
   /* font-weight: bold; */
@@ -152,9 +156,19 @@ footer img:hover {
   font-size: 10;
 }
 
+.arrow {
+  height: 15px;
+  width: 25px;
+  margin-left: -40px;
+  filter: invert(94%) sepia(14%) saturate(141%) hue-rotate(131deg)
+    brightness(96%) contrast(98%);
+  transition: 0.2s;
+}
+
 .item p {
   font-size: 15;
   line-height: 20px;
+  padding-right: 75px;
 }
 
 .contaner:hover .item {
@@ -165,8 +179,14 @@ footer img:hover {
   background-color: rgb(27, 39, 66);
 }
 .contaner .item:hover h1 {
-  color: aquamarine;
+  color: rgb(127, 255, 212);
 }
+.contaner .item:hover h1 img {
+  filter: invert(99%) sepia(6%) saturate(6180%) hue-rotate(81deg)
+    brightness(104%) contrast(98%);
+  transform: translateX(5px) translateY(-5px);
+}
+
 .contaner img {
   width: 100px;
   margin-top: 20px;
