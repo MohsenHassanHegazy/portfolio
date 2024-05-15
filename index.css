@@ -38,10 +38,19 @@ body {
 /* left panel */
 
 .left {
-  position: fixed;
-  width: 45vw;
+  /* position: fixed;
+  width: 45vw; */
   margin: 5vh 0 0 5vw;
   padding-left: 40px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+@media (aspect-ratio > 1) {
+  .left {
+    position: fixed;
+    width: 45vw;
+  }
 }
 
 .left h1 {
@@ -59,7 +68,7 @@ a:visited {
 
 /* side nav bar */
 nav {
-  margin-top: 40px;
+  margin-top: 5vw;
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -89,9 +98,13 @@ nav > a:hover::before,
   border-left: solid 80px;
 }
 /* contacts footer  */
-footer {
-  margin-top: 43vh;
+.gap {
+  flex-grow: 0.67;
 }
+footer {
+  width: fit-content;
+}
+
 footer a {
   margin: 0 5px;
   border-radius: 10%;
@@ -115,11 +128,15 @@ footer img:hover {
 }
 
 .right {
-  position: absolute;
-  width: 45vw;
-  left: 50vw;
   margin: 5vh 10vw 0 0;
   scroll-behavior: smooth;
+}
+@media (aspect-ratio > 1) {
+  .right {
+    position: absolute;
+    width: 45vw;
+    left: 50vw;
+  }
 }
 
 #about {
