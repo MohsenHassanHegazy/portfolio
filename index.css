@@ -146,7 +146,8 @@ footer img:hover {
   }
 }
 
-#about {
+#about,
+.para {
   padding-right: 75px;
   line-height: 25px;
   font-size: 15;
@@ -154,7 +155,8 @@ footer img:hover {
   margin: 30px;
   margin-bottom: 100px;
 }
-#about p {
+#about p,
+para p {
   margin-bottom: 30px;
 }
 
@@ -229,4 +231,11 @@ li {
   background-color: rgba(127, 255, 212, 0.089);
   color: aquamarine;
   border-radius: 30%;
+}
+
+#other {
+  margin-left: 25px;
+}
+#other section {
+  margin-bottom: 20px;
 }
