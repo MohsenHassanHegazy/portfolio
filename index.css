@@ -185,7 +185,7 @@ para p {
 
 .arrow {
   height: 15px;
-  width: 25px;
+  width: 15px;
   margin-left: -40px;
   filter: invert(94%) sepia(14%) saturate(141%) hue-rotate(131deg)
     brightness(96%) contrast(98%);
@@ -215,7 +215,6 @@ para p {
 }
 
 .contaner img {
-  height: 70px;
   width: 100px;
   margin-top: 20px;
   margin-right: 20px;
