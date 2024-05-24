@@ -51,7 +51,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media (aspect-ratio > 1) {
+@media (min-width: 600px) {
   .left {
     position: fixed;
     width: 45vw;
@@ -121,6 +121,7 @@ footer a {
 
 footer img {
   width: 25px;
+  height: 25px;
   margin: 10px;
   filter: invert(0.5);
   transition: 0.2s;
@@ -138,7 +139,7 @@ footer img:hover {
   margin: 5vh 10vw 0 0;
   scroll-behavior: smooth;
 }
-@media (aspect-ratio > 1) {
+@media (min-width: 600px) {
   .right {
     position: absolute;
     width: 45vw;
@@ -214,6 +215,7 @@ para p {
 }
 
 .contaner img {
+  height: 70px;
   width: 100px;
   margin-top: 20px;
   margin-right: 20px;
