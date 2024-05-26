@@ -43,15 +43,10 @@ body {
 /* left panel */
 
 .left {
-  /* position: fixed;
-  width: 45vw; */
-  margin: 5vh 0 0 5vw;
-  padding-left: 40px;
-  height: 100vh;
+  /* margin: 5vh 0 0 5vw; */
+  padding-left: 10px;
   display: flex;
   flex-direction: column;
-  position: fixed;
-  width: 45vw;
 }
 
 .left h1 {
@@ -70,42 +65,15 @@ a:visited {
 
 /* side nav bar */
 nav {
-  margin-top: 5vw;
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-}
-nav > a {
-  color: rgb(241, 250, 250);
-  margin: 10px 7px;
-  font-size: 12;
-  font-weight: bold;
-  letter-spacing: 1px;
-  transition: 0.2s;
-  opacity: 0.5;
-}
-nav > a::before {
-  content: "";
-  font-size: 1.5px;
-  border-left: solid 40px;
-  transition: 0.5s;
-  margin-right: 10px;
-}
-nav > a:hover,
-.active {
-  color: rgb(241, 250, 250);
-  opacity: 1;
-}
-nav > a:hover::before,
-.active::before {
-  border-left: solid 80px;
+  display: none;
 }
 /* contacts footer  */
 .gap {
-  flex-grow: 0.67;
+  display: none;
 }
 footer {
   width: fit-content;
+  margin-bottom: 60px;
 }
 
 footer a {
@@ -128,42 +96,41 @@ footer img:hover {
 /* right div */
 
 .right > div {
-  margin: 5vh 0 10vh 0;
+  margin: 5vh 0 0 0;
 }
-
 .title {
-  display: none;
+  margin-left: 3vw;
+  font-size: 0.9rem;
 }
-
 .right {
   margin: 5vh 10vw 0 0;
   scroll-behavior: smooth;
-  position: absolute;
-  width: 45vw;
-  left: 50vw;
 }
 
 #about,
 .para {
-  padding-right: 75px;
   line-height: 25px;
-  font-size: 16;
+  font-size: 1rem;
   /* font-weight: bold; */
   margin: 30px;
+  margin-left: 3vw;
   margin-bottom: 100px;
 }
 #about p,
 para p {
   margin-bottom: 30px;
 }
+#about {
+  width: 90vw;
+}
 
 /* contanar and items */
 .contaner {
   transition: 0.4s;
   margin-top: 120px;
+  width: 95vw;
 }
 .contaner > div {
-  margin: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -179,41 +146,35 @@ para p {
   font-size: 10;
 }
 
+.contaner .item h1 {
+  font-size: 18;
+}
+
 .arrow {
-  height: 15px;
-  width: 15px;
-  margin-left: -40px;
+  width: 15px !important ;
   filter: invert(94%) sepia(14%) saturate(141%) hue-rotate(131deg)
     brightness(96%) contrast(98%);
   transition: 0.2s;
 }
 
 .item p {
-  font-size: 15;
+  font-size: 14;
   line-height: 20px;
-  padding-right: 75px;
 }
 
-.contaner:hover .item {
-  opacity: 0.4;
-}
-.contaner .item:hover {
-  opacity: 1;
-  background-color: rgb(27, 39, 66);
-}
-.contaner .item:hover h1 {
+.contaner .item h1:hover {
   color: rgb(127, 251, 255);
 }
-.contaner .item:hover h1 img {
+.contaner .item h1:hover img {
   filter: invert(99%) sepia(6%) saturate(6180%) hue-rotate(81deg)
     brightness(104%) contrast(98%);
   transform: translateX(5px) translateY(-5px);
 }
 
-.contaner img {
-  width: 100px;
+.item div img {
+  width: 20vw;
   margin-top: 20px;
-  margin-right: 20px;
+  margin-right: 5vw;
 }
 ul {
   display: flex;

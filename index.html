@@ -2,7 +2,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" media="(min-width: 1030px)" href="index.css" />
+    <link
+      rel="stylesheet"
+      media="(max-width: 1029px) or (Orintation : portrait)"
+      href="
+    index(phone-mode).css "
+    />
     <link rel="shortcut icon" href="assets\icons\m.png" type="image/x-icon" />
     <title>Mohsen Hassan</title>
   </head>
@@ -12,7 +18,8 @@
       <h1>Mohsen Hassan</h1>
       <h3>web developer</h3>
       <p>
-        I'm a web developer passionate about crafting lightning-fast websites.
+        I'm a web developer passionate about <br />crafting lightning-fast
+        websites.
       </p>
 
       <nav>
@@ -39,6 +46,7 @@
       </footer>
     </div>
     <div class="right">
+      <h3 class="title">ABOUT</h3>
       <div id="about" class="para">
         <p>
           Hi there! I'm Mohsen, a passionate web developer. With expertise in a
@@ -61,6 +69,7 @@
         </p>
       </div>
 
+      <h3 class="title">PROJECTS</h3>
       <div class="contaner" id="projects">
         <div class="item">
           <div><img src="assets\images\shop.png" alt="cool" /></div>
@@ -147,6 +156,7 @@
         </div>
       </div>
       <div class="contaner" id="courses">
+        <h3 class="title">COURSES</h3>
         <div class="item">
           <div><img src="assets\images\node_course.jpg" alt="cool" /></div>
           <div>
