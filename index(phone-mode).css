@@ -151,7 +151,8 @@ para p {
 }
 
 .arrow {
-  width: 15px !important ;
+  height: 15px !important;
+  width: 15px !important;
   filter: invert(94%) sepia(14%) saturate(141%) hue-rotate(131deg)
     brightness(96%) contrast(98%);
   transition: 0.2s;
@@ -171,8 +172,9 @@ para p {
   transform: translateX(5px) translateY(-5px);
 }
 
-.item div img {
-  width: 20vw;
+.item div > img {
+  width: 18vw;
+  height: 10vw;
   margin-top: 20px;
   margin-right: 5vw;
 }
