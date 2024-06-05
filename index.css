@@ -81,8 +81,8 @@ footer a {
 footer img {
   width: 25px;
   height: 25px;
-  margin: 10px;
-  filter: invert(0.5);
+  margin: 5px;
+  filter: invert(0.7);
   transition: 0.2s;
 }
 footer img:hover {

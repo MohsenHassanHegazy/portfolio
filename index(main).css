@@ -83,7 +83,7 @@ footer img:hover {
   filter: invert(94%) sepia(14%) saturate(141%) hue-rotate(131deg)
     brightness(96%) contrast(98%);
   transition: 0.2s;
-
+  transform: translateY(3px);
   margin-left: 5px;
 }
 
