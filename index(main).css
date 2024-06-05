@@ -76,3 +76,18 @@ footer img:hover {
 .right > div {
   margin: 5vh 0 10vh 0;
 }
+
+.arrow {
+  height: 15px !important;
+  width: 15px !important;
+  filter: invert(94%) sepia(14%) saturate(141%) hue-rotate(131deg)
+    brightness(96%) contrast(98%);
+  transition: 0.2s;
+
+  margin-left: 5px;
+}
+
+.contaner .item h1 {
+  font-weight: 500;
+  font-size: 1rem;
+}
